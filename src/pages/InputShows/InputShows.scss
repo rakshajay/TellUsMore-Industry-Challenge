@@ -1,0 +1,56 @@
+@use '../../styles/variables' as *;
+
+.showImg {
+    border-radius: 1rem;
+    opacity: 50%;
+    transition: 0.3s;
+
+    &--clicked {
+        opacity: 100%;
+    }
+}
+
+.showTiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    &__tile {
+        width: 20%;
+        margin: 1rem;
+        transition: 0.3s;
+    
+        &:hover {
+            opacity: 70%;
+            cursor: pointer;
+        }
+        }
+}
+
+.arrowIcon {
+    width: 1.5rem;
+}
+
+.nextBtn {
+    position: absolute;
+    right: 13%;
+}
+
+.showName {
+    font-weight: bold;
+    font-size: large;
+}
+
+.showRating {
+    font-size: large;
+}
+
+.buttonsDiv {
+    margin: 2rem 0;
+}
+
+.pick {
+    margin-bottom: 2rem;
+}

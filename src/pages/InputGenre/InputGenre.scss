@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+
+.content {
+    height: 70vh;
+}
+
+button {
+    background-color: #39B54A;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+.genreinput {
+    &__title {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__subheading {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.genre-option {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.box {
+    margin-right: 0.5rem;
+}
+
+.homepage__genres {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+    left: 2rem;
+}

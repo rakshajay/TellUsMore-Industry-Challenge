@@ -1,0 +1,47 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global" as *;
+
+.modal {
+    &__overlay {
+        position: fixed;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    &__header {
+        margin: 0.5rem 0;
+    }
+
+    &__rating {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    &__img {
+        border-radius: 1rem;
+    }
+
+    &__container {
+        background: $primary-color;
+        border-radius: 8px;
+        padding: 2rem;
+        width: 40vw;
+        height: 40vh;
+        max-height: 90vh;
+        overflow: auto;
+        position: relative;
+    }
+
+    &__page {
+        margin-bottom: 1rem;
+    }
+}

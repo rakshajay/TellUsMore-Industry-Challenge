@@ -1,0 +1,27 @@
+@use "./variables" as *;
+@use "./resets" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #39B54A;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .625rem 1.875rem;
+    border: none;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    &:hover {
+        background-color: $sec-color-hover;
+    }
+}
